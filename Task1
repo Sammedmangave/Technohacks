@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	char ch;
+	float n1,n2,sum,sub,div,multi;
+	cout<<"Enter two numbers: ";
+	cin>>n1>>n2;
+	cout<<"Enter choice: ";
+	cin>>ch;
+	switch(ch)
+	{
+		case '+':
+			sum=n1+n2;
+			cout<<n1<<" + "<<n2<<" = "<<sum<<endl;
+			break;
+					
+		case '-':
+			sub=n1-n2;
+			cout<<n1<<" - "<<n2<<" = "<<sub<<endl;
+			break;
+					
+		case '*':
+			multi=n1*n2;
+			cout<<n1<<" * "<<n2<<" = "<<multi<<endl;
+			break;
+					
+		case '/':
+			div=n1/n2;
+			cout<<n1<<" / "<<n2<<" = "<<div<<endl;
+			break;				
+	}
+	return 0;
+}
