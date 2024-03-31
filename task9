@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+void password(int n) {
+	std::cout << "password: ";
+	for (int i = 0; i < n; i++) {
+		int d = rand() % 200; 
+		if (d >= 33 && d <= 123) {
+			std::cout << static_cast<char>(d); 
+		} else {
+			std::cout << d % 10; 
+		}
+	}
+	std::cout << "\n";
+}
+
+int main() 
+{
+	int n; 
+	std::cout<<"Enter length of password you want : ";
+	std::cin>>n;
+	std::srand(std::time(0));
+
+	password(n);
+}
